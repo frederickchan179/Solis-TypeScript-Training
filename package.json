@@ -1,0 +1,22 @@
+{
+  "name": "solis-typeccript-training",
+  "version": "1.0.0",
+  "description": "A Solis's playground for training TypeScript",
+  "main": "index.js",
+  "repository": "https://github.com/frederickchan179/Solis-TypeScript-Training",
+  "author": "Frederick Chan <hoa.tran@solislab.com>",
+  "license": "MIT",
+  "scripts": {
+    "lint": "eslint .",
+    "ts-check": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "@type-challenges/utils": "^0.1.1",
+    "@types/node": "^20.4.10",
+    "@typescript-eslint/eslint-plugin": "^6.3.0",
+    "@typescript-eslint/parser": "^6.3.0",
+    "eslint": "^8.47.0",
+    "typescript": "^5.1.6",
+    "utility-types": "^3.10.0"
+  }
+}
