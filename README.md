@@ -7,7 +7,7 @@ Prerequisites:
 
 ---
 
-Steps to Follow:
+Steps to do the TypeScript questions:
 
 1. 📦 Install necessary packages using `yarn install`.
 
@@ -24,6 +24,24 @@ Steps to Follow:
 7. 🖇️ Submit a PR on [the training repository](https://github.com/frederickchan179/Solis-TypeScript-Training/pulls) and tag it with an `answer` label.
 
 8. 🔔 Notify me to review your work.
+
+---
+
+Steps to do do the lesson quiz:
+
+1. 🧩 Choose a day you'd like to do its lesson quiz.
+
+2. 📖 Directly open the file `quiz.html` on your browser.
+
+3. 💪 Answer the quiz carefully, you can see the hint for each question if available.
+
+4. 📸 Take a screen shot after finished, then move it into the chosen day with name `quiz.<your-nickname>.<png/jpg>`.
+
+5. 🚀 Push your screen shot to a branch named `<day>/<your-nickname>`, e.g. `day1/fred`.
+
+6. 🖇️ Submit a PR on [the training repository](https://github.com/frederickchan179/Solis-TypeScript-Training/pulls) and tag it with an `answer` label.
+
+7. 🔔 Notify me to review your work.
 
 ---
 

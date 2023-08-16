@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TypeScript Day 1 Quiz</title>
+
+    <style>
+      html,
+      body {
+        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+      }
+    </style>
+  </head>
+
+  <body class="flex items-center justify-center w-screen h-screen">
+    <div class="fixed top-5 left-1/2 -translate-x-1/2 h-[40px] p-2 rounded-md bg-[#001e3f]">
+      <a href="https://solislab.com/">
+        <img src="https://d33wubrfki0l68.cloudfront.net/f6f6644166a033a7b8c93cc32e10843dfc8e3a06/06891/assets/logo.svg" alt="Solis Lab - We build award winning websites" class="w-full h-full">
+      </a>
+    </div>
+
+    <main class="w-[600px] max-w-[95vw]">
+      <div class="quizdown">
+        ---
+        primaryColor: "#001e3f"
+        shuffleQuestions: true
+        shuffleAnswers: true
+        ---
+
+        ### TypeScript có hỗ trợ đầy đủ tính năng của JavaScript không?
+
+        > [Xem lại slide 3](https://docs.google.com/presentation/d/1PbP6YQbmTaay7CMJj4EvaGptRBhs701fveBKUzyx3Eg/edit#slide=id.g25fb667fc6b_0_35)
+
+        1. [x] Có, hỗ trợ mọi phiên bản
+        1. [ ] Còn tuỳ phiên bản
+        1. [ ] Không
+
+        ### TypeScript có chạy được trực tiếp trên trình duyệt (browsers) được không?
+
+        > [Xem lại slide 5](https://docs.google.com/presentation/d/1PbP6YQbmTaay7CMJj4EvaGptRBhs701fveBKUzyx3Eg/edit#slide=id.g25fb667fc6b_0_20)
+
+        1. [x] Không
+        1. [ ] Có
+        1. [ ] Còn tuỳ trình duyệt
+
+        ### TypeScript hỗ trợ dynamic typing hay static typing?
+
+        > [Xem lại slide 3](https://docs.google.com/presentation/d/1PbP6YQbmTaay7CMJj4EvaGptRBhs701fveBKUzyx3Eg/edit#slide=id.g25fb667fc6b_0_35)
+
+        1. [x] Cả 2
+        1. [ ] Static typing
+        1. [ ] Dynamic typing
+
+        ### JavaScript hỗ trợ dynamic typing hay static typing?
+
+        > [Xem lại slide 3](https://docs.google.com/presentation/d/1PbP6YQbmTaay7CMJj4EvaGptRBhs701fveBKUzyx3Eg/edit#slide=id.g25fb667fc6b_0_35)
+
+        1. [x] Dynamic typing
+        1. [ ] Cả 2
+        1. [ ] Static typing
+
+        ### JavaScript hay TypeScript tận dụng tốt hơn intellisense và auto-complete của IDE/Editor?
+
+        > [Xem lại slide 5](https://docs.google.com/presentation/d/1PbP6YQbmTaay7CMJj4EvaGptRBhs701fveBKUzyx3Eg/edit#slide=id.g25fb667fc6b_0_20)
+
+        1. [x] TypeScript
+        1. [ ] JavaScript
+        1. [ ] Cả 2 như nhau
+
+        ### TypeScript giải quyết vấn đề gì cho Solis?
+
+        > [Xem lại slide 7](https://docs.google.com/presentation/d/1PbP6YQbmTaay7CMJj4EvaGptRBhs701fveBKUzyx3Eg/edit#slide=id.g261094d69d8_0_18)
+
+        - [x] Tăng hiệu suất, kết quả công việc.
+        - [x] Giảm thiểu lỗi nghiêm trọng có thể xảy ra trên production.
+        - [x] Đóng vai trò như một tài liệu số cho dự án, giúp dễ dàng maintain, onboard.
+        - [ ] Chỉ để làm hài lòng sếp và khách hàng.
+        - [ ] Giúp gia tăng doanh thu cho công ty.
+
+        ### TypeScript sẽ kiểm tra lỗi cho chúng ta khi nào?
+
+        > [Xem lại slide 5](https://docs.google.com/presentation/d/1PbP6YQbmTaay7CMJj4EvaGptRBhs701fveBKUzyx3Eg/edit#slide=id.g25fb667fc6b_0_20)
+
+        - [x] Trong quá trình code.
+        - [x] Trong khi build dự án (complie and build).
+        - [ ] Trong khi ứng dụng đang chạy thật (runtime).
+
+        ### TypeScript có biết `fullName` thuộc type nào không? Và vì sao?
+
+        ```ts
+        const firstName = "Bob"
+        const surname = "Peters"
+        const fullName = `${firstName} ${surname}`
+        console.log(fullName)
+        ```
+
+        1. [x] Có, là `string` vì TypeScript có thể nội suy ra được dựa trên ngữ cảnh (type inference).
+        1. [ ] Có, là `any` vì chưa khai báo type cho `firstName` và `surname`
+        1. [ ] Không, vì chưa khai báo type cho `firstName` và `surname`.
+        1. [ ] Không, vì chưa khai báo type cho `fullName`.
+
+        ### Đoạn code dưới đây có gặp lỗi TypeScript không?
+
+        ```ts
+        function calculateSum(num1: number, num2: number) {
+          return num1 + num2
+        }
+
+        const sum = calculateSum(5, 7)
+        console.log(sum)
+        ```
+
+        1. [x] Không
+        1. [ ] Có
+
+        ### Đoạn code dưới đây có gặp lỗi TypeScript không?
+
+        ```ts
+        function calculateSum(array: number[]) {
+          let sum = 0;
+          for (const num of array) {
+            sum += num;
+          }
+
+          return sum;
+        }
+
+        const numbers = [1, 2, 3, 4, 5];
+        let result = calculateSum(numbers)
+
+        console.log(result)
+
+        result = `Sum is ${result}`
+        ```
+
+        1. [x] Có
+        1. [ ] Không
+      </div>
+    </main>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/quizdown@latest/public/build/quizdown.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/quizdown@latest/public/build/extensions/quizdownKatex.js"></script>
+	  <script src="https://cdn.jsdelivr.net/npm/quizdown@latest/public/build/extensions/quizdownHighlight.js"></script>
+    <script>
+      quizdown.register(quizdownKatex).register(quizdownHighlight).init()
+    </script>
+  </body>
+</html>
