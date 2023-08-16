@@ -21,7 +21,7 @@ Steps to do the TypeScript questions:
 
 6. 🚀 Push your code to a branch named `<day>/<your-nickname>`, e.g. `day1/fred`.
 
-7. 🖇️ Submit a PR on [the training repository](https://github.com/frederickchan179/Solis-TypeScript-Training/pulls) and tag it with an `answer` label.
+7. 🖇️ Submit a PR on [the training repository](https://github.com/frederickchan179/Solis-TypeScript-Training/pulls).
 
 8. 🔔 Notify me to review your work.
 
@@ -39,7 +39,7 @@ Steps to do do the lesson quiz:
 
 5. 🚀 Push your screen shot to a branch named `<day>/<your-nickname>`, e.g. `day1/fred`.
 
-6. 🖇️ Submit a PR on [the training repository](https://github.com/frederickchan179/Solis-TypeScript-Training/pulls) and tag it with an `answer` label.
+6. 🖇️ Submit a PR on [the training repository](https://github.com/frederickchan179/Solis-TypeScript-Training/pulls).
 
 7. 🔔 Notify me to review your work.
 
