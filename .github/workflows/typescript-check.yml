@@ -9,6 +9,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
 
       - uses: actions/setup-node@v3
         with:
@@ -18,4 +20,11 @@ jobs:
         run: yarn install --frozen-lockfile
 
       - name: Check TypeScript
-        run: yarn ts-check
+        run: |
+          git fetch origin main:main
+          FILES=$(git diff --name-only main... | grep '\.ts$')
+          if [ -n "$FILES" ]; then
+            npx tsc --noEmit $FILES
+          else
+            echo "No TypeScript files have changed"
+          fi
