@@ -62,3 +62,10 @@ The recommended VSCode packages installed in my Codespace can be manually instal
 - [JavaScript (ES6) code snippets](https://marketplace.visualstudio.com/items?itemName=xabikos.JavaScriptSnippets)
 - [Git Graph](https://marketplace.visualstudio.com/items?itemName=mhutchie.git-graph)
 - [vscode-icons](https://marketplace.visualstudio.com/items?itemName=vscode-icons-team.vscode-icons)
+
+---
+
+Other local commands:
+
+- `yarn ts-check <path/to/fle>`: Compile and check TypeScript errors
+- `yarn ts-run <path/to/file>`: Run a TypeScript file

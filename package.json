@@ -6,16 +6,21 @@
   "repository": "https://github.com/frederickchan179/Solis-TypeScript-Training",
   "author": "Frederick Chan <hoa.tran@solislab.com>",
   "license": "MIT",
+  "type": "module",
   "scripts": {
     "lint": "eslint .",
+    "ts-run": "ts-node --esm --files",
     "ts-check": "tsc --noEmit"
   },
   "devDependencies": {
     "@type-challenges/utils": "^0.1.1",
     "@types/node": "^20.4.10",
+    "@types/node-fetch": "^2.6.4",
     "@typescript-eslint/eslint-plugin": "^6.3.0",
     "@typescript-eslint/parser": "^6.3.0",
     "eslint": "^8.47.0",
+    "node-fetch": "^3.3.2",
+    "ts-node": "^10.9.1",
     "typescript": "^5.1.6",
     "utility-types": "^3.10.0"
   }
