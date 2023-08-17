@@ -29,13 +29,13 @@ Steps to do the TypeScript questions:
 
 Steps to do do the lesson quiz:
 
-1. 🧩 Choose a day you'd like to do its lesson quiz.
+1. 🌐 Access [Training Quizzes Page](https://frederickchan179.github.io/Solis-TypeScript-Training/)
 
-2. 📖 Directly open the file `quiz.html` on your browser.
+2. 🧩 Choose a day you'd like to do its lesson quiz.
 
 3. 💪 Answer the quiz carefully, you can see the hint for each question if available.
 
-4. 📸 Take a screen shot after finished, then move it into the chosen day with name `quiz.<your-nickname>.<png/jpg>`.
+4. 📸 Take a screen shot after finished, then move it into corresponding path in repo `answers/day<lesson day>/quiz.<your-nickname>.<png/jpg>`.
 
 5. 🚀 Push your screen shot to a branch named `<day>/<your-nickname>`, e.g. `day1/fred`.
 
