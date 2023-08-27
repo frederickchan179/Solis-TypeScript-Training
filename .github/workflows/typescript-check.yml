@@ -24,7 +24,7 @@ jobs:
           git fetch origin main:main
           FILES=$(git diff --name-only main... | grep '\.ts$')
           if [ -n "$FILES" ]; then
-            npx tsc --noEmit $FILES
+            yarn ts-check $FILES
           else
             echo "No TypeScript files have changed"
           fi

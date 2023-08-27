@@ -10,7 +10,7 @@
   "scripts": {
     "lint": "eslint .",
     "ts-run": "ts-node --esm --files",
-    "ts-check": "tsc --noEmit"
+    "ts-check": "tsc --noEmit --skipLibCheck -t ES2020 -m ESNext --lib ES2020,DOM,DOM.Iterable --moduleResolution bundler"
   },
   "devDependencies": {
     "@type-challenges/utils": "^0.1.1",
